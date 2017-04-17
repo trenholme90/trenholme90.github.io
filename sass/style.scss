@@ -1,0 +1,303 @@
+@import "compass";
+@import "partials/_variables";
+@import "partials/_normalise";
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway');
+
+body{
+  margin: 0;
+  background-color: #ffffff;
+  font-family: $text-font;
+}
+
+
+
+  .nav{
+    width: 100%;
+    background-color: $bg;
+    position: relative;
+    z-index: 150;
+    margin-bottom: -80px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+
+      ul {
+
+        li {
+          display: inline-block;
+          width: 50%;
+          float: left;
+          text-align: center;
+          font-size: 25px;
+          color: #000000;
+
+            a {
+              color:#000;
+            }
+            :hover{
+              background-color: #000000 !important;
+              color: $main !important;
+              text-decoration: none !important;
+
+
+            }
+        }
+
+      }
+
+
+  }
+
+  .nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+
+
+@font-face {
+    font-family: alako-bold;
+    font-family: PoiretOne-Regular;
+    src: src("file:///Users/James/Documents/portfolio/");
+
+}
+
+.row {
+  margin: 5% 0 0 0 !important;
+}
+
+
+.header-bg {
+  background-color: $main;
+  // background-image:url(http://www.shunvmall.com/data/out/18/46955447-background-image.png);
+  width:100%;
+  max-height:400px;
+  height:300px;
+
+  .logo{
+    width:40%;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    max-width: 650px;
+
+  }
+    img {
+      width: 100%;
+      margin: 0 auto;
+
+    }
+}
+
+.panel {
+
+  :hover .panel-hover {
+  bottom: 0;
+  height: 100%;
+}
+
+}
+
+.panel-hover {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: $main;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  //border: 10px solid $main;
+  //box-shadow: inset 0px 0px 0px 3px #fff;
+  //box-sizing: border-box; /* Include padding and border in element's width and height */
+  transition: .5s ease;
+}
+
+.hovertext {
+  white-space: nowrap;
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: $text-font;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+
+    p{
+      margin-top: 10px;
+
+
+    }
+}
+
+.btn {
+
+  color: $main !important;
+  background-color: #000000 !important;
+  display:block !important;
+  border-radius: 12px !important;
+}
+
+.container{
+  margin: 0 auto;
+  max-width:900px;
+  width:90%;
+  padding:2% 5% 2% 5%;
+  background-color:#fff;
+  min-height: 500px;
+  font-family: $text-font;
+
+  img{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+.lb-prev{display:none !important;}
+.lb-next{display:none !important;}
+.lb-data .lb-caption{font-size:27px !important; font-family: $text-font !important;}
+.lb-data .lb-number{display:none !important;}
+
+.lb-outerContainer{
+  // width: 50% !important;
+
+}
+
+.footer {
+        background-color: $secondry-colour;
+        min-height: 400px;
+        text-align: center;
+
+
+
+  h1 {
+    font-family: $heading-font;
+    font-size: 50px;
+    transform: translate(0%, 50%);
+    -ms-transform: translate(0%, 50%);
+
+
+  }
+  h3{
+    font-family: $text-font;
+    font-size: 50px;
+    transform: translate(0%, 50%);
+    -ms-transform: translate(0%, 50%);
+
+  }
+
+}
+
+.inner-border {
+              border: 20px solid $secondry-colour;
+              box-shadow: inset 0px 0px 0px 10px #75c5ba;
+              box-sizing: border-box; /* Include padding and border in element's width and height */
+            }
+
+@media (min-width: 1px) and (max-width: 500px) {
+
+  .nav ul li{
+    display: inline-block;
+    width: 44%;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    transform: translate(0%, 10%);
+
+  }
+
+  .header-bg {
+    background-color: $main;
+    // background-image:url(http://www.shunvmall.com/data/out/18/46955447-background-image.png);
+    width:100%;
+    max-height:200px;
+    height:300px;
+
+    .logo{
+      width:80%;
+      margin: 0 auto;
+      position: relative;
+      top: 40%;
+      transform: translateY(-40%);
+
+    }
+
+  }
+
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+
+
+    .nav ul li{
+      display: inline-block;
+      width: 44%;
+      float: left;
+      text-align: center;
+      font-size: 14px;
+      color: #000000;
+      transform: translate(0%, 10%);
+
+
+    }
+
+    .header-bg {
+      background-color: $main;
+      // background-image:url(http://www.shunvmall.com/data/out/18/46955447-background-image.png);
+      width:100%;
+      max-height:200px;
+      height:300px;
+
+      .logo{
+        width:50%;
+        margin: 0 auto;
+        position: relative;
+        top: 40%;
+        transform: translateY(-40%);
+
+      }
+
+    }
+
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+
+
+      .nav ul li{
+        display: inline-block;
+        width: 44%;
+        float: left;
+        text-align: center;
+        font-size: 14px;
+        color: #000000;
+        transform: translate(0%, 10%);
+
+      }
+
+      .header-bg {
+        background-color: $main;
+        // background-image:url(http://www.shunvmall.com/data/out/18/46955447-background-image.png);
+        width:100%;
+        max-height:200px;
+        height:300px;
+
+        .logo{
+          width:50%;
+          margin: 0 auto;
+          position: relative;
+          top: 40%;
+          transform: translateY(-40%);
+
+        }
+
+      }
+
+    }
