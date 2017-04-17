@@ -238,13 +238,14 @@ $("#nav2").click(function(){
 
 // cancel lightbox, open url
 
-$(".panel").click(function(){
+$(".panel").click(function(e){
+  e.preventDefault();
   urlString = $('a', this).attr("href");
   if(urlString.indexOf("http" || "https") > -1) {
     $(lightbox).stop;
     window.open(urlString)
   } else {
-    window.stop(urlString);
+
   }
 
 });
