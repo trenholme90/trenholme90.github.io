@@ -628,8 +628,6 @@ body {
 }
 /* line 35, ../sass/style.scss */
 .nav ul li :hover {
-  background-color: #000000 !important;
-  color: #ff8c00 !important;
   text-decoration: none !important;
 }
 
