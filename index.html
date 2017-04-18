@@ -45,7 +45,7 @@
                                   <div class="row">
 
 
-                                      <div class="img col-lg-7 col-md-12 col-sm-12 col-xs-12 panel" onclick='doEdit(event)'>
+                                      <div class="img col-lg-7 col-md-12 col-sm-12 col-xs-12 panel">
                                         <a href="https://trenholme90.github.io/images/Bacardi-screenshot.jpg" data-lightbox="image-1" data-title="Bacardi landing page code">
                                         <img src="https://trenholme90.github.io/images/Bacardi-screenshot.jpg" alt="Bacardi landing page">
                                         <div class="panel-hover">
@@ -249,18 +249,7 @@ $(".panel").click(function(){
 
 });
 
-// cancel img opening onclick
 
-function doEdit(event) {
-    if (event.stopPropagation) {
-        event.stopPropagation();    // Standard
-    }
-    else {
-        event.cancelBubble = true;  // Old IE
-    }
-
-    // ...your img logic...
-}
 
 
 // lightbox
