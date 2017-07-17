@@ -241,7 +241,7 @@ $("#nav2").click(function(){
 
 $(".panel").click(function(){
   urlString = $('a', this).attr("href");
-  if(urlString.indexOf(".com" || ".co.uk") > -1) {
+  if(urlString.indexOf(".com" || ".co.uk" || ".html") > -1) {
     $(lightbox).stop;
     window.open(urlString)
   } else {
