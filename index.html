@@ -242,29 +242,31 @@ $("#nav2").click(function(){
 $(".panel").click(function(){
   urlString = $('a', this).attr("href");
   if(urlString.indexOf(".com" || ".co.uk" || ".html") > -2) {
-    $(lightbox).stop;
+    //$(openWindowPopup).stop;
     window.open(urlString)
   } else {
 
   }
-
 });
-
-
 
 
 // lightbox
 
-(function(){
+/*(function(){
+
+
+
   var openWindowPopup = function(e) {
-    if(!e) return;
     e.preventDefault();
+    if(!e) return;
     window.open(e.target.href, "intent", "scrollbars=yes,resizable=yes,toolbar=no,location=yes,width=550,height=420,left=" + (window.screen ? Math.round(screen.width / 2 - 275) : 50) + ",top=" + 100);
   };
   var ids = ['tweet', 'like', 'gplus'];
+
   for(var i = 0; i < ids.length; i++) {
     document.getElementById(ids[i]).onclick = openWindowPopup;
   }
+
 })();
 
 
@@ -273,6 +275,6 @@ $(".panel").click(function(){
 </script>
    <script src="https://trenholme90.github.io/bootstrap/js/bootstrap.min.js"></script>
    <script src="Magnific-Popup-master/magnific-popup.js"></script>
-   <script src="https://trenholme90.github.io/lightbox/src/js/lightbox.js"></script>
+   <!--<script src="https://trenholme90.github.io/lightbox/src/js/lightbox.js"></script>-->
 
 </html>
